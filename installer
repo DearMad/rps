@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+from os import *
+print ("""To run the program, we need to install the listed tools :
+
+            pip3 , sl, cowsay, figlet, & random modules""")
+system (" sleep 8 ; reset ; sudo apt update ; sudo apt install python3-pip sl cowsay figlet ; sudo pip3 install random --upgrade")
+system ("echo `Witing...` ; sleep 3 ; chmod +x resset ; sudo mv resset /usr/local/bin")
+system ("chmod +x rps ; sudo mv rps /usr/local/bin ; reset")
+print ("""the programm was installed successfully***
+
+        you can use the 'rps' command whenever you need to use the program""")

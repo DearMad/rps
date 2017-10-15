@@ -1,0 +1,49 @@
+#!/usr/bin/python3
+import random
+from os import *
+system ("resset")
+user_name = input("\033[1;32mWhats Your Name ? \033[1;m")
+system ("cowsay Hello " + user_name)
+print ("")
+print ('-' * 50)
+print ("")
+system ("figlet DearMad")
+print ("")
+print ('-' * 50)
+print ("")
+from random import randint
+computer_input = ["Rock", "Paper", "Scissors"]
+computer = computer_input[randint(0,2)]
+player = False
+while player == False:
+    player = input("\033[1;37mRock 0r Paper 0r Scissors ? \033[1;m")
+    if player == computer:
+        print ("\nTie!\n")
+    elif player == "Rock":
+        if computer == "Paper":
+            print ("\nYou lose!", computer, "covers", player)
+            print ("")
+        else:
+            print ("\nYou win!", player, "smashes", computer)
+            print ("")
+    elif player == "Paper":
+        if computer == "Scissors":
+            print ("\nYou lose!", computer, "cut", player)
+            print ("")
+        else:
+            print ("\nwin!", player, "covers", computer)
+            print ("")
+    elif player == "Scissors":
+        if computer == "Rock":
+            print ("\nlose...", computer, "smashes", player)
+            print ("")
+        else:
+            print ("\nYou win!", player, "cut", computer)
+            print ("")
+    elif player == "Exit" or player == "exit":
+        system ("resset ; figlet GoodBye !")
+        exit()
+    else:
+        print ('\n\033[1;35mThats not a valid play. Check your spelling!\033[1;m\n')
+    player = False
+    computer = computer_input[randint(0,2)]
