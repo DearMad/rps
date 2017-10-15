@@ -47,3 +47,6 @@ while player == False:
         print ('\n\033[1;35mThats not a valid play. Check your spelling!\033[1;m\n')
     player = False
     computer = computer_input[randint(0,2)]
+# By DearMad
+# github.com/DearMad
+# t.me/KiIIuminati 
